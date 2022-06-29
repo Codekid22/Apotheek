@@ -1,0 +1,501 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --th-orange: #FFAD43;
+    --th-dk-grey: #d1d1d1;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #d1d1d1;
+}
+
+a { text-decoration: none; }
+li { list-style: none; }
+
+header {
+    border-bottom: 1px solid var(--th-dk-grey);
+    padding: 0 12px;
+    background-color: #fff;
+}
+
+.nav-bar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 20px;
+    text-align: center;
+}
+
+.logo h3 {
+    display: inline-block;
+}
+
+.logo h3:nth-child(1) {
+    color: #214488;
+}
+.logo h3:nth-child(2) {
+    color: #0F4A98;
+    margin-left: -4px;
+}
+
+.links ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.links ul li a.active {
+    font-weight: 600;
+}
+
+.links ul li a:hover {
+    font-weight: 600;
+}
+
+.links ul li a {
+    color: #000;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+
+.nav-options .cart {
+    padding: 0 20px;
+}
+
+.nav-options .cart img {
+    width: 20px;
+}
+
+.nav-options .login i {
+    color: #fff;
+    background-color: var(--th-orange);
+    margin-right: 10px;
+}
+
+.nav-options .login a {
+    color: #fff;
+    background-color: var(--th-orange);
+    padding: 8px 18px;
+    border-radius: 32px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    background-color: #fff;
+}
+
+.slider-container {
+    width: 100%;
+    height: 430px;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-container .slide:nth-child(1) {
+    background-image: url(../images/1a.jpg);
+    background-position-y: -120px;
+}
+
+.slider-container .slide:nth-child(2) {
+    background-image: url(../images/2a.jpg);
+}
+
+.slider-container .slide:nth-child(3) {
+    background-image: url(../images/a3.jpg);
+}
+
+
+.slide-dots {
+    margin-top: -25px;
+    text-align: center;
+    line-height: 0;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.dot {
+    margin: 0 2px;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 50%;
+    border: 1px solid #70707029;
+    display: inline-block;
+  }
+
+  .caption {
+    position: absolute;
+    margin-top: 86px;
+    margin-left: 79px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #22222263;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .caption h4 {
+      font-size: 28px;
+  }
+
+  .caption p {
+      font-size: 20px;
+  }
+  
+  .caption button {
+      margin-top: 10px;
+      width: 110px;
+  }
+
+  .btn {
+    color: #fff;
+    background-color: var(--th-orange);
+    padding: 8px 18px;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .dot.active {
+      background-color: #A5A5A5;
+  }
+
+  .container-title svg,
+  .container-title h4 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 20px 10px;
+  }
+
+  .service-section .container-title svg,
+  .catalogus-section .container-title svg {
+      width: 52px;
+  }
+
+  .service-section .container-title h4,
+  .catalogus-section .container-title h4  {
+      font-size: 20px;
+      color: #575757;
+  }
+
+  .service-container, .news-container {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .service-block {
+      background-color: #355895;
+      width: 276px;
+      border-radius: 4px;
+      color: #fff;
+      padding: 23px;
+  }
+
+  .service-title  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .service-title  svg {
+      width: 28px;
+  }
+
+  .service-title h4 {
+      font-size: 20px;
+      line-height: 0;
+  }
+
+  .service-content p {
+      font-size: 19px;
+  }
+
+  .newsbrf-section {
+      border-top: 1px solid #d1d1d1;
+      border-bottom: 1px solid #d1d1d1;
+      background-color: #F9F9F9;
+      margin-top: 80px;
+      padding-bottom: 20px;
+  }
+
+  .newsbrf-block {
+      text-align: center;
+      margin: auto;
+      max-width: 800px;
+      padding:25px;
+  }
+
+  .newsbrf-block .container-title {
+    line-height: 0;
+  }
+
+  .newsbrf-block .container-title h4 {
+      font-size: 20px;
+  }
+
+  .newsbrf-content .box {
+      display: flex;
+      max-width: 500px;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  .newsbrf-content .info {
+      padding: 14px 0;
+  }
+
+
+  .news-section {
+      padding-bottom: 80px;
+  }
+
+  .newsbrf-content .box input {
+      background-color: #fff;
+      padding: 10px 20px;
+     border: 1px solid #d1d1d1;
+     width: 100%;
+  }
+
+  .newsbrf-content .box button {
+    background-color:  var(--th-orange);
+    color: #fff;
+    border: 1px solid  var(--th-orange);
+    padding: 10px 20px;
+}
+
+.news-section .container-title svg {
+    width: 52px;
+}
+
+.news-section .container-title h4 {
+    font-size: 20px;
+    color: #575757;
+}
+
+.news-block {
+    background-color: #F9F9F9;
+    border: 1px solid #d1d1d1;
+    width: 276px;
+    border-radius: 4px;
+    color: #000;
+}
+
+.block-content {
+    padding: 23px;
+}
+
+.block-img {
+    height: 130px;
+}
+
+.block-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.block-mi {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.block-title h4 {
+    font-size: 20px;
+}
+
+.block-info p {
+    font-size: 19px;
+}
+
+.block:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 12px;
+}
+
+.footer-container .block {
+    margin: 10px 20px;
+    width: 320px;
+}
+
+.widget a {
+    color: #000;
+}
+
+.block img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container .block .widget {
+    margin: 20px 0;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login-block, .contact-block {
+    padding: 80px 0;
+}
+
+.login-block input, textarea {    
+    display: block;
+    width: 280px;
+    height: 40px;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+}
+
+.login-block label {
+    text-align: left;
+    font-weight: 800;
+}
+
+.login-block button {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    margin: auto;
+}
+
+.catalogus-section {
+    justify-content: center;
+}
+
+.catalogus-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+.procduct-card {
+    width: 220px;
+    box-shadow: 1px 1px 10px 3px #e3e3e3;
+    margin: 30px;
+}
+
+.procduct-card .content {
+    padding: 20px;
+}
+
+.product-title h5 {
+    font-size: 16px;
+}
+
+.product-unit p {
+    font-size: 13px;
+    color: #8b8b8b;
+}
+
+.procduct-card button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.product-img {
+    background-image: url(https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/27526/aImg/50122/hormone-drug-associated-with-increased-risk-of-benign-brain-tumor-at-high-doses-l.jpg);
+    width: 100%;
+    height: 80px;
+    background-size: cover;
+}
+.login.active a {
+    border: 1px solid var(--th-orange);
+}
+.login.active a, .login.active i {
+    color: var(--th-orange);
+    background-color: transparent;
+}
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  #map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media screen and (max-width: 823px) {
+    .slider-container .slide:nth-child(1) {
+        background-position-y: 0;
+    }
+    .service-container {
+        flex-direction: column;
+    }
+    .service-block, .news-block {
+        width: auto;
+        margin: 10px;
+    }
+    .service-container, .news-container {
+        flex-direction: column;
+    }
+    .contact-section {
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .login-block, .contact-block {
+        margin: auto;
+    
+    }
+    .contact-block {
+        text-align: center;
+    }
+    main {
+        border: none;
+    }
+  }
