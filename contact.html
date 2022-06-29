@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Online Apotheek">
+    <meta name="keywords" content="Apotheek, Webshop">
+    <meta name="author" content="Giovanni Brouwers">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apotheek</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-links">
+                <div class="logo">
+                    <h3>Mijn</h3>
+                    <h3>Apo</h3>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="catalogus.php">Catalogus</a></li>
+                        <li><a href="voorlichting.html">Voorlichting</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-options">
+                <div class="cart">
+                    <a href="#"><img src="cart.svg"></a>
+                </div>
+                <div class="login">
+                    <a href="login.html"><i class="fa-solid fa-lock"></i>Inloggen</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contact-section">
+            <div class="contact-block">
+               <h2>Contact</h2>
+               <p>Met dit formulier kunt u al uw vragen en <br> klachten bij ons stellen, wij zullen zo snel mogelijk <br> contact met uw opnemen.</p>
+            </div>
+            <div class="login-block">
+                <form method="post">
+                    <label>Naam</label>
+                    <input type="text">
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Bericht</label>
+                    <textarea></textarea>
+                    <button class="btn">Verzenden</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="block">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <h4>ADRES</h4>
+                        </div>
+                        <ul>
+                            <li><span>Kloekstraat 35</span></li>
+                            <li><span>1784 JO, Schagen</span></li>
+                        </ul>
+                        <div class="widget-title" style="margin-top: 30px;">
+                            <h4>CONTACT</h4>
+                        </div>
+                        <ul>
+                            <li><span>school@mail.com</span></li>
+                            <li><span>0223-364837</span></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-title">
+                            <h4>MENU</h4>
+                        </div>
+                        <ul>
+                            <li><a href="catalogus.php"><span>Catalogus</span></a></li>
+                            <li><a href="voorlichting.html"><span>Voorlichting</span></a></li>
+                            <li><a href="contact.html"><span>Contact</span></a></li>
+                            <li><a href="login.html"><span>Inloggen</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="assets/images/map.png">
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="assets/js/slider.js"></script>
+</body>
+</html>
